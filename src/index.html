@@ -4,834 +4,845 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eksamensprojekt</title>
+    <title>Tellerup</title>
   </head>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.37.5/tsparticles.min.js"></script> -->
-  <body class="grid place-items-center p-8">
-    <h1 class="text-xs">Dette site er et unsolicited design projekt</h1>
 
-    <!-- NAV -->
-    <nav id="header" class="top-0 z-30 w-full py-1">
-      <div
-        class="container mx-auto mt-0 flex w-full flex-wrap items-center justify-between px-6 py-3"
-      >
-        <label for="menu-toggle" class="block cursor-pointer md:hidden">
+  <body class="">
+    <!-- MENU -->
+
+    <div class="navbar bg-deepgreen">
+      <div class="flex-1">
+        <img class="h-6 pl-6" src="img/boggg.svg" alt="" />
+        <a
+          href="index.html"
+          class="pl-2 font-yesevaone text-lg font-semibold normal-case text-black"
+          >TELLERUP</a
+        >
+      </div>
+
+      <div class="order-2 flex items-center md:order-3" id="nav-content">
+        <a class="inline-block no-underline hover:text-black" href="#">
           <svg
-            class="fill-current text-gray-900"
+            class="fill-current text-black"
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
           >
-            <title>menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-          </svg>
-        </label>
-        <input class="hidden" type="checkbox" id="menu-toggle" />
-
-        <div
-          class="order-3 hidden w-full md:order-1 md:flex md:w-auto md:items-center"
-          id="menu"
-        >
-          <nav>
-            <ul
-              class="items-center justify-between pt-4 text-base text-gray-700 md:flex md:pt-0"
-            >
-              <li>
-                <a
-                  class="inline-block py-2 px-4 no-underline hover:text-black hover:underline"
-                  href="#"
-                  >Bøger</a
-                >
-              </li>
-              <li>
-                <a
-                  class="inline-block py-2 px-4 no-underline hover:text-black hover:underline"
-                  href="#"
-                  >Side</a
-                >
-              </li>
-              <li>
-                <a
-                  class="inline-block py-2 px-4 no-underline hover:text-black hover:underline"
-                  href="#"
-                  >Side</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="order-1 md:order-2">
-          <a
-            class="flex items-center text-xl font-bold tracking-wide text-gray-800 no-underline hover:no-underline"
-            href="#"
-          >
-            <svg
-              class="mr-2 fill-current text-gray-800"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5,22h14c1.103,0,2-0.897,2-2V9c0-0.553-0.447-1-1-1h-3V7c0-2.757-2.243-5-5-5S7,4.243,7,7v1H4C3.447,8,3,8.447,3,9v11 C3,21.103,3.897,22,5,22z M9,7c0-1.654,1.346-3,3-3s3,1.346,3,3v1H9V7z M5,10h2v2h2v-2h6v2h2v-2h2l0.002,10H5V10z"
-              />
-            </svg>
-            TELLERUP
-          </a>
-        </div>
-
-        <div class="order-2 flex items-center md:order-3" id="nav-content">
-          <a class="inline-block no-underline hover:text-black" href="#">
-            <svg
-              class="fill-current hover:text-black"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <circle fill="none" cx="12" cy="7" r="3" />
-              <path
-                d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z"
-              />
-            </svg>
-          </a>
-
-          <a class="inline-block pl-3 no-underline hover:text-black" href="#">
-            <svg
-              class="fill-current hover:text-black"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z"
-              />
-              <circle cx="10.5" cy="18.5" r="1.5" />
-              <circle cx="17.5" cy="18.5" r="1.5" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <section class="bg-white py-8">
-      <div class="container mx-auto flex flex-wrap items-center pt-4 pb-12">
-        <!-- Dropdown menu -->
-        <div
-          id="dropdown"
-          class="z-10 hidden w-44 divide-y divide-gray-100 rounded bg-white shadow dark:bg-gray-700"
-        >
-          <ul
-            class="py-1 text-sm text-gray-700 dark:text-gray-200"
-            aria-labelledby="dropdownDefault"
-          >
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >Dashboard</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >Settings</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >Earnings</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >Sign out</a
-              >
-            </li>
-          </ul>
-        </div>
-        <nav id="store" class="top-0 z-30 w-full px-6 py-1">
-          <div
-            class="container mx-auto mt-0 flex w-full flex-wrap items-center justify-between px-2 py-3"
-          >
-            <a
-              class="text-xl font-bold uppercase tracking-wide text-gray-800 no-underline hover:no-underline"
-              href="#"
-            >
-              Store
-            </a>
-
-            <div class="flex items-center" id="store-nav-content">
-              <a
-                class="inline-block pl-3 no-underline hover:text-black"
-                href="#"
-              >
-              </a>
-
-              <a
-                class="inline-block pl-3 no-underline hover:text-black"
-                href="#"
-              >
-                <svg
-                  class="fill-current hover:text-black"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </nav>
-
-        <div class="flex w-full flex-col bg-stone-100 p-6 md:w-1/3 xl:w-1/4">
-          <a href="#">
-            <img class="hover:grow hover:shadow-lg" src="img/bog.jpg" />
-            <div class="flex items-center justify-between pt-3 text-xl">
-              <p class="">The Psychology of Money</p>
-              <svg
-                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
-                />
-              </svg>
-            </div>
-
-            <p class="pt-1 text-gray-900">Morgan Housel</p>
-            <p class="pt-1 text-gray-900">Bog, Hardback</p>
-            <p class="text-xl">149 DKK</p>
-          </a>
-        </div>
-
-        <div class="flex w-full flex-col bg-stone-100 p-6 md:w-1/3 xl:w-1/4">
-          <a href="#">
-            <img class="hover:grow hover:shadow-lg" src="img/bog.jpg" />
-            <div class="flex items-center justify-between pt-3 text-xl">
-              <p class="">The Psychology of Money</p>
-              <svg
-                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
-                />
-              </svg>
-            </div>
-
-            <p class="pt-1 text-gray-900">Morgan Housel</p>
-            <p class="pt-1 text-gray-900">Bog, Hardback</p>
-            <p class="text-xl">149 DKK</p>
-          </a>
-        </div>
-
-        <div class="flex w-full flex-col bg-stone-100 p-6 md:w-1/3 xl:w-1/4">
-          <a href="#">
-            <img class="hover:grow hover:shadow-lg" src="img/bog.jpg" />
-            <div class="flex items-center justify-between pt-3 text-xl">
-              <p class="">The Psychology of Money</p>
-              <svg
-                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
-                />
-              </svg>
-            </div>
-
-            <p class="pt-1 text-gray-900">Morgan Housel</p>
-            <p class="pt-1 text-gray-900">Bog, Hardback</p>
-            <p class="text-xl">149 DKK</p>
-          </a>
-        </div>
-
-        <div class="flex w-full flex-col p-6 md:w-1/3 xl:w-1/4">
-          <a href="#">
-            <img class="hover:grow hover:shadow-lg" src="img/bog.jpg" />
-            <div class="flex items-center justify-between pt-3 text-xl">
-              <p class="">The Psychology of Money</p>
-              <svg
-                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
-                />
-              </svg>
-            </div>
-
-            <p class="pt-1 text-gray-900">Morgan Housel</p>
-            <p class="pt-1 text-gray-900">Bog, Hardback</p>
-            <p class="text-xl">149 DKK</p>
-          </a>
-        </div>
-
-        <div class="flex w-full flex-col p-6 md:w-1/3 xl:w-1/4">
-          <a href="#">
-            <img class="hover:grow hover:shadow-lg" src="img/bog.jpg" />
-            <div class="flex items-center justify-between pt-3 text-xl">
-              <p class="">The Psychology of Money</p>
-              <svg
-                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
-                />
-              </svg>
-            </div>
-
-            <p class="pt-1 text-gray-900">Morgan Housel</p>
-            <p class="pt-1 text-gray-900">Bog, Hardback</p>
-            <p class="text-xl">149 DKK</p>
-          </a>
-        </div>
-
-        <div class="flex w-full flex-col p-6 md:w-1/3 xl:w-1/4">
-          <a href="#">
-            <img class="hover:grow hover:shadow-lg" src="img/bog.jpg" />
-            <div class="flex items-center justify-between pt-3 text-xl">
-              <p class="">The Psychology of Money</p>
-              <svg
-                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
-                />
-              </svg>
-            </div>
-
-            <p class="pt-1 text-gray-900">Morgan Housel</p>
-            <p class="pt-1 text-gray-900">Bog, Hardback</p>
-            <p class="text-xl">149 DKK</p>
-          </a>
-        </div>
-
-        <div class="flex w-full flex-col p-6 md:w-1/3 xl:w-1/4">
-          <a href="#">
-            <img class="hover:grow hover:shadow-lg" src="img/bog.jpg" />
-            <div class="flex items-center justify-between pt-3 text-xl">
-              <p class="">The Psychology of Money</p>
-              <svg
-                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
-                />
-              </svg>
-            </div>
-
-            <p class="pt-1 text-gray-900">Morgan Housel</p>
-            <p class="pt-1 text-gray-900">Bog, Hardback</p>
-            <p class="text-xl">149 DKK</p>
-          </a>
-        </div>
-
-        <div class="flex w-full flex-col p-6 md:w-1/3 xl:w-1/4">
-          <a href="#">
-            <img class="hover:grow hover:shadow-lg" src="img/bog.jpg" />
-            <div class="flex items-center justify-between pt-3 text-xl">
-              <p class="">The Psychology of Money</p>
-              <svg
-                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
-                />
-              </svg>
-            </div>
-
-            <p class="pt-1 text-gray-900">Morgan Housel</p>
-            <p class="pt-1 text-gray-900">Bog, Hardback</p>
-            <p class="text-xl">149 DKK</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRODUKT SIDE -->
-    <section>
-      <div class="antialiased">
-        <div class="py-6">
-          <div class="mx-auto mt-6 max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="-mx-4 flex flex-col md:flex-row">
-              <div class="px-4 md:flex-1">
-                <div x-data="{ image: 1 }" x-cloak>
-                  <div class="mb-4 h-64 rounded-lg bg-gray-100 md:h-80">
-                    <div
-                      x-show="image === 1"
-                      class="mb-4 flex h-64 items-center justify-center rounded-lg bg-gray-100 md:h-80"
-                    >
-                      <img src="img/bog.jpg" alt="" />
-                      <span class="text-5xl"></span>
-                    </div>
-                  </div>
-
-                  <div class="-mx-2 mb-4 flex">
-                    <template x-for="i in 4">
-                      <div class="flex-1 px-2">
-                        <button
-                          x-on:click="image = i"
-                          :class="{ 'ring-2 ring-indigo-300 ring-inset': image === i }"
-                          class="flex h-24 w-full items-center justify-center rounded-lg bg-gray-100 focus:outline-none md:h-32"
-                        >
-                          <span x-text="i" class="text-2xl"></span>
-                        </button>
-                      </div>
-                    </template>
-                  </div>
-                </div>
-              </div>
-              <div class="px-4 md:flex-1">
-                <h2
-                  class="mb-2 text-2xl font-bold leading-tight tracking-tight text-gray-800 md:text-3xl"
-                >
-                  The Psychology of Money
-                </h2>
-                <p class="text-sm text-gray-500">
-                  Af
-                  <a href="#" class="text-indigo-600 hover:underline"
-                    >Morgan Housel</a
-                  >
-                </p>
-
-                <div class="my-4 flex items-center space-x-4">
-                  <div>
-                    <div class="flex rounded-lg bg-gray-100 py-2 px-3">
-                      <span class="mr-1 mt-1 text-indigo-400">DKK</span>
-                      <span class="text-3xl font-bold text-blue-600"
-                        >299,00</span
-                      >
-                    </div>
-                  </div>
-                  <div class="flex-1">
-                    <p class="text-xl font-semibold text-green-500">
-                      Lorem Ipsum
-                    </p>
-                    <p class="text-sm text-gray-400">Lorem ipsum</p>
-                  </div>
-                </div>
-
-                <p class="text-gray-500">
-                  Doing well with money isn't necessarily about what you know.
-                  It's about how you behave. And behavior is hard to teach, even
-                  to really smart people.
-                </p>
-
-                <div class="flex space-x-4 py-44">
-                  <div class="relative">
-                    <div
-                      class="absolute left-0 right-0 block pt-2 text-center text-xs font-semibold uppercase tracking-wide text-gray-400"
-                    >
-                      Antal
-                    </div>
-                    <select
-                      class="flex h-14 cursor-pointer appearance-none items-end rounded-xl border border-gray-200 pl-4 pr-16 pb-1"
-                    >
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-
-                    <svg
-                      class="absolute right-0 bottom-0 mb-2 mr-2 h-5 w-5 text-gray-400"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M8 9l4-4 4 4m0 6l-4 4-4-4"
-                      />
-                    </svg>
-                  </div>
-
-                  <button
-                    type="button"
-                    class="h-14 rounded-xl bg-green-600 px-36 py-2 font-semibold text-white hover:bg-green-700"
-                  >
-                    Tilføj til kurv
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="">
-        <h2>Beskrivelse</h2>
-        <p>
-          Doing well with money isn't necessarily about what you know. It's
-          about how you behave. And behavior is hard to teach, even to really
-          smart people.The field of finance, including investment, personal
-          finance, and business decisions, is typically presented as a
-          mathematical one, where we are given precise instructions based on
-          data and formulas. However, people in the real world don't use
-          spreadsheets to make important financial decisions. At the dinner
-          table or in the conference room, people mix in their own backgrounds,
-          perspectives, egos, prides, marketing strategies, and peculiar
-          motivations to come up with these decisions.
-        </p>
-      </div>
-      <div>
-        <h2>Information</h2>
-        <p>Lagerantal: 100+</p>
-        <p>Levering: 1 til 3 hverdage</p>
-        <p>Format: Bog, Hardback</p>
-        <p>Udgivelsesdatoer: 8. september 2020</p>
-        <p>Sprog: Dansk</p>
-        <p>EAN: 1234567891234</p>
-      </div>
-    </section>
-
-    <!-- INDKØBSKURV -->
-
-    <div class="container mx-auto mt-10">
-      <div class="my-10 flex shadow-md">
-        <div class="w-3/4 bg-white px-10 py-10">
-          <div class="flex justify-between border-b pb-8">
-            <h1 class="text-2xl font-semibold">Indkøbskurv</h1>
-            <h2 class="text-2xl font-semibold">3 vare(r)</h2>
-          </div>
-          <div class="mt-10 mb-5 flex">
-            <h3 class="w-2/5 text-xs font-semibold uppercase text-gray-600">
-              Produkt detaljer
-            </h3>
-            <h3
-              class="w-1/5 text-center text-center text-xs font-semibold uppercase text-gray-600"
-            >
-              Antal
-            </h3>
-            <h3
-              class="w-1/5 text-center text-center text-xs font-semibold uppercase text-gray-600"
-            >
-              Pris
-            </h3>
-            <h3
-              class="w-1/5 text-center text-center text-xs font-semibold uppercase text-gray-600"
-            >
-              Subtotal
-            </h3>
-          </div>
-          <div class="-mx-8 flex items-center px-6 py-5 hover:bg-gray-100">
-            <div class="flex w-2/5">
-              <!-- produkt 1 -->
-              <div class="w-20">
-                <img class="h-24" src="img/bog.jpg" alt="" />
-              </div>
-              <div class="ml-4 flex flex-grow flex-col justify-between">
-                <span class="text-sm font-bold">The Psychology of Money</span>
-                <span class="text-xs">Af Morgan Housel</span>
-                <a
-                  href="#"
-                  class="text-xs font-semibold text-gray-500 hover:text-red-500"
-                  >Fjern fra kurv</a
-                >
-              </div>
-            </div>
-            <div class="flex w-1/5 justify-center">
-              <svg class="w-3 fill-current text-gray-600" viewBox="0 0 448 512">
-                <path
-                  d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
-                />
-              </svg>
-
-              <input
-                class="mx-2 w-8 border text-center"
-                type="text"
-                value="1"
-              />
-
-              <svg class="w-3 fill-current text-gray-600" viewBox="0 0 448 512">
-                <path
-                  d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
-                />
-              </svg>
-            </div>
-            <span class="w-1/5 text-center text-sm font-semibold"
-              >299.00 DKK</span
-            >
-            <span class="w-1/5 text-center text-sm font-semibold"
-              >299.00 DKK</span
-            >
-          </div>
-
-          <div class="-mx-8 flex items-center px-6 py-5 hover:bg-gray-100">
-            <div class="flex w-2/5">
-              <!-- produkt 2 -->
-              <div class="w-20">
-                <img
-                  class="h-24"
-                  src="https://drive.google.com/uc?id=10ht6a9IR3K2i1j0rHofp9-Oubl1Chraw"
-                  alt=""
-                />
-              </div>
-              <div class="ml-4 flex flex-grow flex-col justify-between">
-                <span class="text-sm font-bold"
-                  >Kommunikation i multimediedesign</span
-                >
-                <span class="text-xs">Gunhild Marie Andersen</span>
-                <a
-                  href="#"
-                  class="text-xs font-semibold text-gray-500 hover:text-red-500"
-                  >Fjern fra kurv</a
-                >
-              </div>
-            </div>
-            <div class="flex w-1/5 justify-center">
-              <svg class="w-3 fill-current text-gray-600" viewBox="0 0 448 512">
-                <path
-                  d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
-                />
-              </svg>
-
-              <input
-                class="mx-2 w-8 border text-center"
-                type="text"
-                value="1"
-              />
-
-              <svg class="w-3 fill-current text-gray-600" viewBox="0 0 448 512">
-                <path
-                  d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
-                />
-              </svg>
-            </div>
-            <span class="w-1/5 text-center text-sm font-semibold"
-              >399.00 DKK</span
-            >
-            <span class="w-1/5 text-center text-sm font-semibold"
-              >399.00 DKK</span
-            >
-          </div>
-
-          <div class="-mx-8 flex items-center px-6 py-5 hover:bg-gray-100">
-            <div class="flex w-2/5">
-              <!-- produkt 3 -->
-              <div class="w-20">
-                <img
-                  class="h-24"
-                  src="https://drive.google.com/uc?id=1vXhvO9HoljNolvAXLwtw_qX3WNZ0m75v"
-                  alt=""
-                />
-              </div>
-              <div class="ml-4 flex flex-grow flex-col justify-between">
-                <span class="text-sm font-bold"
-                  >Det grafiske udtryk i multimediedesign</span
-                >
-                <span class="text-xs">Jesper I. Christensen</span>
-                <a
-                  href="#"
-                  class="text-xs font-semibold text-gray-500 hover:text-red-500"
-                  >Fjern fra kurv</a
-                >
-              </div>
-            </div>
-            <div class="flex w-1/5 justify-center">
-              <svg class="w-3 fill-current text-gray-600" viewBox="0 0 448 512">
-                <path
-                  d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
-                />
-              </svg>
-              <input
-                class="mx-2 w-8 border text-center"
-                type="text"
-                value="1"
-              />
-
-              <svg class="w-3 fill-current text-gray-600" viewBox="0 0 448 512">
-                <path
-                  d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
-                />
-              </svg>
-            </div>
-            <span class="w-1/5 text-center text-sm font-semibold"
-              >300,00 DKK</span
-            >
-            <span class="w-1/5 text-center text-sm font-semibold"
-              >300,00 DKK</span
-            >
-          </div>
-
-          <a href="#" class="mt-10 flex text-sm font-semibold text-indigo-600">
-            <svg
-              class="mr-2 w-4 fill-current text-indigo-600"
-              viewBox="0 0 448 512"
-            >
-              <path
-                d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"
-              />
-            </svg>
-            Fortsæt med at shoppe
-          </a>
-        </div>
-
-        <div id="summary" class="w-1/4 px-8 py-10">
-          <h1 class="border-b pb-8 text-2xl font-semibold">Subtotal</h1>
-          <div class="mt-10 mb-5 flex justify-between">
-            <span class="text-sm font-semibold uppercase">3 vare(r)</span>
-            <span class="text-sm font-semibold">699 DKK</span>
-          </div>
-          <div>
-            <label class="mb-3 inline-block text-sm font-medium uppercase"
-              >Forsendelse</label
-            >
-            <p>Du har opnået gratis levering!</p>
-          </div>
-
-          <div class="py-10">
-            <label
-              for="promo"
-              class="mb-3 inline-block text-sm font-semibold uppercase"
-              >Rabatkode</label
-            >
-            <input
-              type="text"
-              id="promo"
-              placeholder="Indtast din rabatkode"
-              class="w-full p-2 text-sm"
+            <circle fill="none" cx="12" cy="7" r="3" />
+            <path
+              d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z"
             />
+          </svg>
+        </a>
+
+        <svg
+          class="text-gray-500 h-10 w-10 fill-current pl-4 text-black"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+          />
+        </svg>
+      </div>
+
+      <div class="flex-none">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-black"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu rounded-box menu-compact mt-3 w-36 bg-base-100 p-2 shadow"
+            >
+              <li><a href="produkter.html">BØGER</a></li>
+            </ul>
           </div>
-          <button
-            class="bg-green-500 px-5 py-2 text-sm uppercase text-white hover:bg-green-700"
-          >
-            Tilføj
-          </button>
-          <div class="mt-8 border-t">
-            <div
-              class="flex justify-between py-6 text-sm font-semibold uppercase"
-            >
-              <span>Pris i alt</span>
-              <span>998,00 DKK</span>
+        </div>
+        <div class="dropdown dropdown-end">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-black"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span class="badge indicator-item badge-sm bg-black text-white"
+                >3</span
+              >
             </div>
-            <button
-              class="w-full bg-indigo-500 py-3 text-sm font-semibold uppercase text-white hover:bg-indigo-600"
-            >
-              Gå til betaling
-            </button>
+          </label>
+          <div
+            tabindex="0"
+            class="card dropdown-content card-compact mt-3 w-52 bg-base-100 shadow"
+          >
+            <div class="card-body">
+              <span class="text-lg font-bold">3 VARER</span>
+              <span class="text-black">Subtotal: DKK 647,50</span>
+              <div class="card-actions">
+                <a
+                  href="kurv.html"
+                  class="mx-auto block w-full rounded-full bg-green px-3 py-3 text-center font-bold text-white hover:bg-hoverknap"
+                  >Gå til betaling</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- KARRUSEL
+    <!-- SPLASH KARRUSEL -->
+
+    <div class="carousel">
+      <div id="slide1" class="carousel-item relative h-96 w-full">
+        <img
+          src="img/banner1.webp"
+          class="mx-auto block h-full w-full object-cover md:items-center md:pt-0"
+        />
+
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative h-96 w-full">
+        <img
+          src="img/banner3.webp"
+          class="mx-auto block h-full w-full object-cover md:items-center md:pt-0"
+        />
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative h-96 w-full">
+        <img
+          src="img/banner4.webp"
+          class="mx-auto block h-full w-full object-cover md:items-center md:pt-0"
+        />
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="mx-auto mt-6 max-w-7xl sm:px-6 lg:px-8" />
+
+    <section class="mx-auto mt-6 max-w-7xl px-8 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="py-8 font-yesevaone text-xl">Tellerups bogunivers</h1>
+        <p class="pb-8 font-poppins text-lg">
+          Tellerup er et af de førende danske forlag, med fokus på børne og
+          ungdomsbøger. I vores udvalg af børne og ungdomsbøger kan du gå på
+          opdagelse i alt fra fantasy, gys og horror, til bøger om søde heste.
+        </p>
+      </div>
+    </section>
+
+    <!-- KARRUSEL -->
+
     <section>
-      <div class="flex w-full flex-col p-6 md:w-1/3 xl:w-1/4">
-        <a href="#">
-          <img class="hover:grow hover:shadow-lg" src="img/bog.jpg" />
-          <div class="flex items-center justify-between pt-3 text-xl">
-            <p class="">The Psychology of Money</p>
-            <svg
-              class="h-6 w-6 fill-current text-gray-500 hover:text-black"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
-              />
-            </svg>
-          </div>
+      <h2 class="pt-8 text-center font-yesevaone text-base font-semibold">
+        Nyheder
+      </h2>
+      <div class="container carousel rounded-box mx-auto">
+        <div class="carousel-item flex flex-col p-6 md:w-1/3 xl:w-1/4">
+          <a href="produkt.html">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/a.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">
+                De blodgyldne: Dødløs
+              </p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
 
-          <p class="pt-1 text-gray-900">Morgan Housel</p>
-          <p class="pt-1 text-gray-900">Bog, Hardback</p>
-          <p class="text-xl">149 DKK</p>
-        </a>
+            <p class="pt-1 font-poppins">Af Namina Forna</p>
+            <p class="font-poppins text-sm font-semibold">299 DKK</p>
+          </a>
+        </div>
+
+        <div class="carousel-item flex flex-col p-6 md:w-1/3 xl:w-1/4">
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/p.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">Odinsbarn</p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Pettersen</p>
+
+            <p class="font-poppins text-sm font-semibold">149,50 DKK</p>
+          </a>
+        </div>
+
+        <div class="carousel-item flex flex-col p-6 md:w-1/3 xl:w-1/4">
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/o.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">1Q84</p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Af Haruki Mura Kami</p>
+
+            <p class="font-poppins text-sm font-semibold">149,50 DKK</p>
+          </a>
+        </div>
+
+        <div class="carousel-item p-6">
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/b.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">
+                Prinsen af ondskab
+              </p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Af Holly Black</p>
+            <p class="font-poppins text-sm font-semibold">149,50 DKK</p>
+          </a>
+        </div>
+
+        <div class="carousel-item flex flex-col p-6 md:w-1/3 xl:w-1/4">
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/m.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">Evnen</p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Af Siri Pettersen</p>
+
+            <p class="font-poppins text-sm font-semibold">149,50 DKK</p>
+          </a>
+        </div>
+
+        <div class="carousel-item flex flex-col p-6 md:w-1/3 xl:w-1/4">
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/d.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">
+                Fantastiske Skabninger
+              </p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Af J.K. Rowling</p>
+
+            <p class="font-poppins text-sm font-semibold">149,50 DKK</p>
+          </a>
+        </div>
+
+        <div class="carousel-item flex flex-col p-6 md:w-1/3 xl:w-1/4">
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/f.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">Jeg er Saga</p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Af Silja Okking</p>
+
+            <p class="font-poppins text-sm font-semibold">299,00 DKK</p>
+          </a>
+        </div>
+
+        <div class="carousel-item flex flex-col p-6 md:w-1/3 xl:w-1/4">
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/e.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">Ravnenes hvisken</p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Af Malene Sølvsten</p>
+
+            <p class="font-poppins text-sm font-semibold">149,50 DKK</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEMAER -->
+
+    <section class="pt-16">
+      <div>
+        <h2 class="pb-2 text-center font-yesevaone text-base font-semibold">
+          Temaer
+        </h2>
+      </div>
+      <div
+        class="container mx-auto flex flex-wrap place-content-center gap-4 pt-4 pb-12"
+      >
+        <div class="">
+          <a href="produkter.html">
+            <img
+              class="h-72 w-72 border hover:grow hover:drop-shadow-2xl"
+              src="img/bog.webp"
+            />
+
+            <div
+              id="bluebox"
+              class="bg-blue text-center text-lg font-semibold text-white hover:grow"
+            >
+              Nyheder
+            </div>
+          </a>
+        </div>
+        <div class="">
+          <a href="#">
+            <img
+              class="h-72 w-72 border hover:grow hover:drop-shadow-xl"
+              src="img/elefanten.webp"
+            />
+            <div
+              id="bluebox"
+              class="bg-blue text-center text-lg font-semibold text-white"
+            >
+              Dyrevenner
+            </div>
+          </a>
+        </div>
+        <div class="">
+          <a href="#">
+            <img
+              class="h-72 w-72 border hover:grow hover:drop-shadow-2xl"
+              src="img/Max_50.webp"
+            />
+            <div
+              id="bluebox"
+              class="bg-blue text-center text-lg font-semibold text-white"
+            >
+              MAX 50
+            </div>
+          </a>
+        </div>
+        <div class="">
+          <a href="#">
+            <img
+              class="h-72 w-72 border hover:grow hover:drop-shadow-2xl"
+              src="img/hjerter.webp"
+            />
+            <div
+              id="bluebox"
+              class="bg-blue text-center text-lg font-semibold text-white"
+            >
+              Kærlighed
+            </div>
+          </a>
+        </div>
+        <div class="">
+          <a href="#">
+            <img
+              class="h-72 w-72 border hover:grow hover:drop-shadow-2xl"
+              src="img/svaerd.webp"
+            />
+            <div
+              id="bluebox"
+              class="bg-blue text-center text-lg font-semibold text-white"
+            >
+              Fantasy
+            </div>
+          </a>
+        </div>
+        <div class="">
+          <a href="#">
+            <img
+              class="h-72 w-72 border hover:grow hover:drop-shadow-2xl"
+              src="img/svaerd2.webp"
+            />
+            <div
+              id="bluebox"
+              class="bg-blue text-center text-lg font-semibold text-white"
+            >
+              Nordisk Mytologi
+            </div>
+          </a>
+        </div>
+        <div class="">
+          <a href="#">
+            <img
+              class="h-72 w-72 border hover:grow hover:drop-shadow-2xl"
+              src="img/graeskgud.webp"
+            />
+            <div
+              id="bluebox"
+              class="bg-blue text-center text-lg font-semibold text-white"
+            >
+              Gudernes Krig
+            </div>
+          </a>
+        </div>
+        <div class="">
+          <a href="#">
+            <img
+              class="h-72 w-72 border hover:grow hover:drop-shadow-2xl"
+              src="img/viking2.webp"
+            />
+            <div
+              id="bluebox"
+              class="bg-blue text-center text-lg font-semibold text-white"
+            >
+              Asgårds Døtre
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <img
+        class="mx-auto block h-full h-64 w-full object-cover pt-6 pt-16 md:items-center md:pt-0"
+        src="img/bannernyt.webp"
+        alt="banner"
+      />
+    </section>
+
+    <!-- KARRUSEL -->
+
+    <section class="pt-16">
+      <h2 class="pt-2 text-center font-yesevaone text-base font-semibold">
+        Bestsellers
+      </h2>
+
+      <div class="container carousel rounded-box mx-auto">
+        <div id="" class="carousel-item flex flex-col p-6 md:w-1/3 xl:w-1/4">
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/h.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">Et eventyr</p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Af Stephen King</p>
+
+            <p class="font-poppins text-sm font-semibold">149,50 DKK</p>
+          </a>
+        </div>
+        <div class="carousel-item p-6">
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/b.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">
+                Prinsen af ondskab
+              </p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Af Holly Black</p>
+            <p class="font-poppins text-sm font-semibold">149,50 DKK</p>
+          </a>
+        </div>
+
+        <div class="carousel-item flex flex-col p-6 md:w-1/3 xl:w-1/4">
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/l.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">Dune</p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Af Frank Herbert</p>
+
+            <p class="font-poppins text-sm font-semibold">299,00 DKK</p>
+          </a>
+        </div>
+
+        <div
+          class="bg-stone-100 carousel-item flex flex-col p-6 md:w-1/3 xl:w-1/4"
+        >
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/g.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">
+                Eventyret om ringen
+              </p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Af J. R. R. Tolkien</p>
+
+            <p class="font-poppins text-sm font-semibold">149,50 DKK</p>
+          </a>
+        </div>
+
+        <div class="carousel-item flex flex-col p-6 md:w-1/3 xl:w-1/4">
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/m.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">Evnen</p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Af Siri Pettersen</p>
+
+            <p class="font-poppins text-sm font-semibold">149,50 DKK</p>
+          </a>
+        </div>
+
+        <div class="carousel-item flex flex-col p-6 md:w-1/3 xl:w-1/4">
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/i.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">Nordisk mytologi</p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Af Neil Gaiman</p>
+
+            <p class="font-poppins text-sm font-semibold">299,00 DKK</p>
+          </a>
+        </div>
+
+        <div class="carousel-item flex flex-col p-6 md:w-1/3 xl:w-1/4">
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/k.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">Åndernes hus</p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Af Isabel Allende</p>
+
+            <p class="font-poppins text-sm font-semibold">299,00 DKK</p>
+          </a>
+        </div>
+
+        <div class="carousel-item flex flex-col p-6 md:w-1/3 xl:w-1/4">
+          <a href="#">
+            <img class="h-80 hover:grow hover:shadow-lg" src="img/h.webp" />
+            <div class="flex items-center justify-between pt-3">
+              <p class="font-poppins text-sm font-semibold">Volvens vej</p>
+              <svg
+                class="text-gray-500 h-6 w-6 fill-current hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+
+            <p class="pt-1 font-poppins">Af Anne-Marie Vedsø Olesen</p>
+
+            <p class="font-poppins text-sm font-semibold">299,00 DKK</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEMAER -->
+
+    <section class="pt-16">
+      <div class="pb-2">
+        <h2 class="text-center font-yesevaone text-base font-semibold">
+          Temaer
+        </h2>
+      </div>
+      <div
+        class="container mx-auto flex flex-wrap place-content-center gap-4 pt-4 pb-12"
+      >
+        <div class="">
+          <a href="produkter.html">
+            <img
+              class="h-72 w-72 border hover:grow hover:drop-shadow-2xl"
+              src="img/pen.webp"
+            />
+            <div
+              id="bluebox"
+              class="bg-blue text-center text-lg font-semibold text-white"
+            >
+              YA Realisme
+            </div>
+          </a>
+        </div>
+        <div class="">
+          <a href="#">
+            <img
+              class="h-72 w-72 border hover:grow hover:drop-shadow-2xl"
+              src="img/girlreading.webp"
+            />
+            <div
+              id="bluebox"
+              class="bg-blue text-center text-lg font-semibold text-white"
+            >
+              Tamora Pierce
+            </div>
+          </a>
+        </div>
+        <div class="">
+          <a href="#">
+            <img
+              class="h-72 w-72 border hover:grow hover:drop-shadow-2xl"
+              src="img/bog.webp"
+            />
+            <div
+              id="bluebox"
+              class="bg-blue text-center text-lg font-semibold text-white"
+            >
+              Bogdropper
+            </div>
+          </a>
+        </div>
+        <div class="">
+          <a href="#">
+            <img
+              class="h-72 w-72 border hover:grow hover:drop-shadow-2xl"
+              src="img/dragon.webp"
+            />
+            <div
+              id="bluebox"
+              class="bg-blue text-center text-lg font-semibold text-white"
+            >
+              Dragonlance
+            </div>
+          </a>
+        </div>
+        <div class="pt-16">
+          <a
+            href=""
+            class="mx-auto block h-14 w-72 rounded-full bg-green px-3 py-3 text-center font-bold text-white hover:bg-hoverknap"
+            >Vis alle temaer</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="flex items-center justify-center pb-8">
+        <img class="h-10 pr-4" src="img/car.svg" alt="" />
+        <p class="font-poppins text-lg">Fri fragt ved køb over DKK 300,00</p>
       </div>
 
-      <div class="flex w-full flex-col p-6 md:w-1/3 xl:w-1/4">
-        <a href="#">
-          <img class="hover:grow hover:shadow-lg" src="img/bog.jpg" />
-          <div class="flex items-center justify-between pt-3 text-xl">
-            <p class="">The Psychology of Money</p>
-            <svg
-              class="h-6 w-6 fill-current text-gray-500 hover:text-black"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
-              />
-            </svg>
-          </div>
-
-          <p class="pt-1 text-gray-900">Morgan Housel</p>
-          <p class="pt-1 text-gray-900">Bog, Hardback</p>
-          <p class="text-xl">149 DKK</p>
-        </a>
+      <div class="flex items-center justify-center pb-8">
+        <img class="h-14 pr-4" src="img/package.svg" alt="" />
+        <p class="text-center font-poppins text-lg">Fragt: DKK 65,00</p>
       </div>
-      <div class="flex w-full flex-col p-6 md:w-1/3 xl:w-1/4">
-        <a href="#">
-          <img class="hover:grow hover:shadow-lg" src="img/bog.jpg" />
-          <div class="flex items-center justify-between pt-3 text-xl">
-            <p class="">The Psychology of Money</p>
-            <svg
-              class="h-6 w-6 fill-current text-gray-500 hover:text-black"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
-              />
-            </svg>
-          </div>
 
-          <p class="pt-1 text-gray-900">Morgan Housel</p>
-          <p class="pt-1 text-gray-900">Bog, Hardback</p>
-          <p class="text-xl">149 DKK</p>
-        </a>
+      <div class="flex items-center justify-center pb-16">
+        <img class="h-10 pr-4" src="img/car.svg" alt="" />
+        <p class="text-center font-poppins text-lg">Levering er 1-3 hverdage</p>
       </div>
-      <div class="flex w-full flex-col p-6 md:w-1/3 xl:w-1/4">
-        <a href="#">
-          <img class="hover:grow hover:shadow-lg" src="img/bog.jpg" />
-          <div class="flex items-center justify-between pt-3 text-xl">
-            <p class="">The Psychology of Money</p>
-            <svg
-              class="h-6 w-6 fill-current text-gray-500 hover:text-black"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
-              />
-            </svg>
-          </div>
+    </section>
 
-          <p class="pt-1 text-gray-900">Morgan Housel</p>
-          <p class="pt-1 text-gray-900">Bog, Hardback</p>
-          <p class="text-xl">149 DKK</p>
-        </a>
+    <!-- FOOTER -->
+
+    <footer class="footer bg-deepgreen p-10">
+      <div class="font-poppins text-black">
+        <span class="footer-title">Kontakt</span>
+        <a class="link link-hover">Kontakt os</a>
+        <a class="link link-hover">Webordre</a>
       </div>
-    </section> -->
+      <div class="font-poppins text-black">
+        <span class="footer-title">Min profil</span>
+        <a class="link link-hover">Log ind</a>
+        <a class="link link-hover">Opret profil</a>
+      </div>
+      <div>
+        <span class="footer-title font-poppins text-black"
+          >Vær sociale med os!</span
+        >
+        <div class="grid grid-flow-col gap-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            fill="currentColor"
+            class="bi bi-youtube"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            fill="currentColor"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            fill="currentColor"
+            class="bi bi-facebook"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+            />
+          </svg>
+
+          <a
+            class="flex font-yesevaone text-base font-bold tracking-wide text-black no-underline hover:no-underline"
+            href="index.html"
+          >
+            TELLERUP
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="./main.js"></script>
   </body>

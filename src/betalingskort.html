@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Tellerup</title>
+  </head>
+  <body class="bg-grey">
+    <div
+      class="min-w-screen bg-gray-200 flex min-h-screen items-center justify-center px-5 pb-10 pt-16"
+    >
+      <div
+        class="text-gray-700 mx-auto w-full rounded-lg bg-white p-5 shadow-lg"
+        style="max-width: 600px"
+      >
+        <div class="w-full pt-1 pb-5"></div>
+        <div class="mb-10">
+          <h1 class="text-center text-base font-semibold uppercase">
+            Betaling
+          </h1>
+        </div>
+        <div class="-mx-2 mb-3 flex">
+          <div class="px-2"></div>
+          <div class="px-2"></div>
+        </div>
+        <div class="mb-3">
+          <label class="mb-2 ml-1 text-sm font-bold">Navn på kortholder</label>
+          <div>
+            <input
+              class="border-gray-200 focus:border-indigo-500 mb-1 w-full rounded-md border-2 px-3 py-2 transition-colors focus:outline-none"
+              placeholder="Bruger"
+              type="text"
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="mb-2 ml-1 text-sm font-bold">Kortnummer</label>
+          <div>
+            <input
+              class="border-gray-200 focus:border-indigo-500 mb-1 w-full rounded-md border-2 px-3 py-2 transition-colors focus:outline-none"
+              placeholder="0000 0000 0000 0000"
+              type="text"
+            />
+          </div>
+        </div>
+        <div class="-mx-2 mb-3 flex items-end">
+          <div class="w-1/2 px-2">
+            <label class="mb-2 ml-1 text-sm font-bold">Udløbsdato</label>
+            <div>
+              <select
+                class="border-gray-200 focus:border-indigo-500 form-select mb-1 w-full cursor-pointer rounded-md border-2 px-3 py-2 transition-colors focus:outline-none"
+              >
+                <option value="01">1 Januar</option>
+                <option value="02">2 Februar</option>
+                <option value="03">3 Marts</option>
+                <option value="04">4 April</option>
+                <option value="05">5 Maj</option>
+                <option value="06">6 Juni</option>
+                <option value="07">7 Juli</option>
+                <option value="08">8 August</option>
+                <option value="09">9 September</option>
+                <option value="10">10 Oktober</option>
+                <option value="11">11 November</option>
+                <option value="12">12 December</option>
+              </select>
+            </div>
+          </div>
+          <div class="w-1/2 px-2">
+            <select
+              class="border-gray-200 focus:border-indigo-500 form-select mb-1 w-full cursor-pointer rounded-md border-2 px-3 py-2 transition-colors focus:outline-none"
+            >
+              <option value="2020">2023</option>
+              <option value="2021">2024</option>
+              <option value="2022">2025</option>
+              <option value="2023">2026</option>
+              <option value="2024">2027</option>
+              <option value="2025">2028</option>
+              <option value="2026">2029</option>
+            </select>
+          </div>
+        </div>
+        <div class="mb-10">
+          <label class="mb-2 ml-1 text-sm font-bold">Kontrolcifre</label>
+          <div>
+            <input
+              class="border-gray-200 focus:border-indigo-500 mb-1 w-32 rounded-md border-2 px-3 py-2 transition-colors focus:outline-none"
+              placeholder="000"
+              type="text"
+            />
+          </div>
+        </div>
+        <div>
+          <a
+            href="kvittering.html"
+            class="hover:bg-gre mx-auto block w-full rounded-full bg-green px-3 py-3 text-center font-bold text-white hover:bg-hoverknap"
+            >Fortsæt</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
